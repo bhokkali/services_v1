@@ -5,7 +5,6 @@ import com.myschool.kmhss.dto.ExamReportDto;
 import com.myschool.kmhss.dto.StudentExamReportDto;
 import com.myschool.kmhss.exception.CustomException;
 import com.myschool.kmhss.services.ExamReportService;
-import com.sun.tools.doclets.internal.toolkit.util.ClassUseMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

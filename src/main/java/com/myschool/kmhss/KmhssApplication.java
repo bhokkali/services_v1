@@ -8,7 +8,7 @@ public class KmhssApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(KmhssApplication.class, args);
-		System.out.println("Application Started");
+		System.out.println("Bhokkali Application Started");
 	}
 
 }

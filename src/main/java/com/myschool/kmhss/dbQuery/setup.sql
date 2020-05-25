@@ -125,7 +125,7 @@ CREATE TABLE public.school_grades (
 	school_grade_id serial8 NOT NULL,
 	school_id int8 not null,
 	grade_id int8 not null,
-	class_teacher_id int8 not null,
+	teacher_id int8 not null,
 	academic_year_id int8 not null,
 	section_name varchar(50) null,
 	cr_date date null,
