@@ -16,7 +16,7 @@ public class ExamGradesDto {
     public Long examId;
     public Long schoolGradeId;
     public Long subjectId;
-    public Date examDate;
+    public String examDate;
     public Long maxMark;
     public String timeFrom;
     public String timeTo;

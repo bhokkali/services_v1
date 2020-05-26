@@ -29,13 +29,11 @@ public class ExamsDao {
     @Column(name="exam_name")
     public String examName;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="start_date")
-    public Date startDate;
+    public String startDate;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="end_date")
-    public Date endDate;
+    public String endDate;
 
     @Temporal(TemporalType.DATE)
     @Column(name="cr_date", nullable = false, updatable = false)

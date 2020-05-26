@@ -31,10 +31,10 @@ public class TeacherAttendanceDao {
     public Long teacherId;
 
     @Column(name = "from_date")
-    public Date fromDate;
+    public String fromDate;
 
     @Column(name = "to_date")
-    public Date toDate;
+    public String toDate;
 
     @Column(name="absent_period")
     public String absentPeriod;

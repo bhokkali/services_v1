@@ -16,7 +16,7 @@ public class SchoolCircularsDto {
     private Long id;
     private Long schoolId;
     private Long academicYearId;
-    private Date circularDate;
+    private String circularDate;
     private String circularTitle;
     private String circularMessage;
     private String circularTo;

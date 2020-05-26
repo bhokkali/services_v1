@@ -20,8 +20,8 @@ public class TeacherAttendanceDto {
     public String academicYear;
     public Long teacherId;
     public String teacherName;
-    public Date fromDate;
-    public Date toDate;
+    public String fromDate;
+    public String toDate;
     public String absentPeriod;
     public String leaveType;
     public String reason;

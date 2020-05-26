@@ -25,9 +25,8 @@ public class CalendarDao {
     @Column(name = "academic_year_id")
     private Long academicYearId;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="event_date")
-    private Date eventDate;
+    private String eventDate;
 
     @Column(name="event_name")
     private String eventName;

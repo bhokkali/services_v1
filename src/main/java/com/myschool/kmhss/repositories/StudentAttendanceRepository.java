@@ -12,9 +12,9 @@ import java.util.List;
 public interface StudentAttendanceRepository extends JpaRepository<StudentAttendanceDao, Long> {
 
     @Query( value = "select * from student_attendance as t1 inner join academic_students as t2 on t1.academic_student_id = t2.academic_student_id where t2.school_grade_id = ?1 and t1.absent_date = ?2", nativeQuery = true)
-    List<StudentAttendanceDao> findStudentGradeAttendance(Long studentGradeId, Date absentDate);
+    List<StudentAttendanceDao> findStudentGradeAttendance(Long studentGradeId, String absentDate);
 
-    StudentAttendanceDao findByAcademicStudentIdAndAbsentDate(Long academicStudentId, Date absentDate);
+    StudentAttendanceDao findByAcademicStudentIdAndAbsentDate(Long academicStudentId, String absentDate);
 
     List<StudentAttendanceDao> findByAcademicStudentId(Long academicStudentId);
 

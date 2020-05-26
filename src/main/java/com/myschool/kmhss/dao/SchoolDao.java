@@ -52,9 +52,8 @@ public class SchoolDao {
     @Column(name="login_pwd")
     private String loginPwd;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="exp_date", nullable = false, updatable = false)
-    private Date expiryDate;
+    private String expiryDate;
 
     @Temporal(TemporalType.DATE)
     @Column(name="cr_date", nullable = false, updatable = false)

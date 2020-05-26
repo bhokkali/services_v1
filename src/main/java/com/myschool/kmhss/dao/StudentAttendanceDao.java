@@ -23,9 +23,8 @@ public class StudentAttendanceDao {
     @Column(name="academic_student_id")
     public Long academicStudentId;
 
-    @Temporal(TemporalType.DATE)
     @Column(name = "absent_date")
-    public Date absentDate;
+    public String absentDate;
 
     @Column(name="absent_period")
     public String absentPeriod;

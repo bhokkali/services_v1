@@ -65,13 +65,11 @@ public class TeacherDao {
     @Column(name="login_pwd")
     public String loginPwd;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="joining_date")
-    public Date joiningDate;
+    public String joiningDate;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="releving_date")
-    public Date relevingDate;
+    public String relevingDate;
 
     @Temporal(TemporalType.DATE)
     @Column(name="cr_date", nullable = false, updatable = false)

@@ -21,6 +21,7 @@ import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -176,7 +177,12 @@ public class StudentsService {
         if(studentsDaoOptional.isPresent()) {
             StudentsDao studentsDao1 = studentsDaoOptional.get();
             studentsDao1.setStatus(status);
-            studentsDao1.setRelevingDate(new Date());
+
+            Date date = new Date();
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+            String strDate= formatter.format(date);
+            studentsDao1.setRelevingDate(strDate);
+
             studentsRepository.save(studentsDao1);
             Long activeStudentCount = getActiveStudentsAgainstParentId(studentsDao1.getParentId());
             if(activeStudentCount <= 0 ) { // chagne parent status

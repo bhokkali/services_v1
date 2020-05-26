@@ -26,9 +26,8 @@ public class SchoolCircularsDao {
     @Column(name="academic_year_id")
     public Long academicYearId;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="circular_date")
-    public Date circularDate;
+    public String circularDate;
 
     @Column(name="circular_title")
     public String circularTitle;

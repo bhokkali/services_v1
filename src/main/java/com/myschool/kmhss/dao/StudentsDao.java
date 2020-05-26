@@ -47,9 +47,8 @@ public class StudentsDao {
     @Column(name="aadhar_no")
     public Long aadharNo;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="dob")
-    public Date dob;
+    public String dob;
 
     @Column(name="gender")
     public String gender;
@@ -66,13 +65,11 @@ public class StudentsDao {
     @Column(name="status")
     public String status;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="joining_date")
-    public Date joiningDate;
+    public String joiningDate;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="releving_date")
-    public Date relevingDate;
+    public String relevingDate;
 
     @Temporal(TemporalType.DATE)
     @Column(name="cr_date", nullable = false, updatable = false)

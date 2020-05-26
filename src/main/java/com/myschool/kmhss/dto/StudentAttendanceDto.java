@@ -14,7 +14,7 @@ public class StudentAttendanceDto {
 
     public Long id;
     public Long academicStudentId;
-    public Date absentDate;
+    public String absentDate;
     public String absentPeriod;
     public String reason;
     public String studentName;

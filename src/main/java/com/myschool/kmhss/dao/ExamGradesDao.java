@@ -29,9 +29,8 @@ public class ExamGradesDao {
     @Column(name="subject_id")
     public Long subjectId;
 
-    @Temporal(TemporalType.DATE)
     @Column(name="exam_date")
-    public Date examDate;
+    public String examDate;
 
     @Column(name="max_mark")
     public Long maxMark;

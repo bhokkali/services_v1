@@ -30,14 +30,14 @@ public class StudentsDto {
     private String bloodGroup;
     private Long mobileNo;
     private Long aadharNo;
-    private Date dob;
+    private String dob;
     private String gender;
     private String community;
     private String nationality;
     private String religion;
     private String status;
-    private Date joiningDate;
-    private Date relevingDate;
+    private String joiningDate;
+    private String relevingDate;
 
     //private ParentsDao parentsDao;
     private String parentName;

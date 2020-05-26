@@ -15,6 +15,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 @Service
@@ -171,7 +172,11 @@ public class TeacherService {
         if(teacherDaoOptional.isPresent()) {
             TeacherDao teacherDao1 = teacherDaoOptional.get();
             teacherDao1.setStatus(teacherDao.getStatus());
-            teacherDao1.setRelevingDate(new Date());
+
+            Date date = new Date();
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+            String strDate= formatter.format(date);
+            teacherDao1.setRelevingDate(strDate);
             teacherRepository.save(teacherDao1);
         } else {
             throw new CustomException(HttpStatus.BAD_REQUEST, "Invalid Teacher Id");

@@ -25,12 +25,12 @@ public class TeacherDto {
     private String address;
    // private String subjects;
     private String status;
-    private Date joiningDate;
-    private Date relevingDate;
-    public String loginName;
-    public String loginPwd;
-    public List<Long> subjects;
+    private String joiningDate;
+    private String relevingDate;
+    private String loginName;
+    private String loginPwd;
+    private List<Long> subjects;
     //public List<TeachersSubjectsXrefDao> subjectInfo;
-    public List<TeachersSubjectsXrefDto> subjectInfo;
+    private List<TeachersSubjectsXrefDto> subjectInfo;
 
 }

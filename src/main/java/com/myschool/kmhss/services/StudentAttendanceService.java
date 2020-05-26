@@ -83,9 +83,9 @@ public class StudentAttendanceService {
 
     public List<StudentAttendanceDto> listStudentGradeAttendance(Long schoolGradeId, String absentDate) throws CustomException, ParseException {
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date parsedDate = dateFormat.parse(absentDate);
-        List<StudentAttendanceDao> studentAttendanceDaos = studentAttendanceRepository.findStudentGradeAttendance(schoolGradeId, parsedDate);
+        //SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        //Date parsedDate = dateFormat.parse(absentDate);
+        List<StudentAttendanceDao> studentAttendanceDaos = studentAttendanceRepository.findStudentGradeAttendance(schoolGradeId, absentDate);
         return convertDaoToDto(studentAttendanceDaos);
     }
 

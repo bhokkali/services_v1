@@ -16,6 +16,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 @Service
@@ -70,7 +71,11 @@ public class SchoolServiceImpl implements SchoolService {
             Date today = cal.getTime();
             cal.add(Calendar.YEAR, 1); // to get previous year add -1
             Date nextYear = cal.getTime();
-            schoolDao.setExpiryDate(nextYear);
+
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+            String strDate= formatter.format(nextYear);
+            schoolDao.setExpiryDate(strDate);
+
             schoolDao.setCreatedDate(new Date());
         }
         schoolRepository.save(schoolDao);

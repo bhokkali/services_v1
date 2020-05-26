@@ -16,8 +16,8 @@ public class ExamsDto {
     public Long schoolId;
     public Long academicYearId;
     public String examName;
-    public Date startDate;
-    public Date endDate;
+    public String startDate;
+    public String endDate;
     public String academicYear;
 
 }
