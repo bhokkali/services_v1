@@ -209,6 +209,7 @@ CREATE TABLE public.exam_marks (
 	attended_status varchar(20) not null,
 	mark_obtained int8 null,
 	mark_percentage int8 null,
+	mark_grade varchar(10) null,
 	cr_date date null,
 	up_date date null
 );

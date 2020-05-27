@@ -53,7 +53,7 @@ public class TeacherDao {
     public SchoolDao schoolDao;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name="teacher_id", referencedColumnName = "teacher_id")
+    @JoinColumn(name="teacher_id", referencedColumnName = "teacher_id", insertable = false, updatable= false)
     public List<TeachersSubjectsXrefDao> subjectInfo;
 
     @Column(name="status")
