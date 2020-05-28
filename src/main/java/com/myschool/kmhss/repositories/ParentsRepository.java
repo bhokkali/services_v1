@@ -22,4 +22,7 @@ public interface ParentsRepository extends PagingAndSortingRepository<ParentsDao
     @Query( value = "select count(*) from parents where school_id=?1 ", nativeQuery = true)
     public Long findBySchoolIdCount(Long schoolId);
 
+    @Query( value = "select count(*) from parents where status='Active' and school_id=?1", nativeQuery = true)
+    public Long findSchoolActiveParentsCount(Long schoolId);
+
 }

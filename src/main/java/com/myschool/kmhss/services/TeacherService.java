@@ -52,10 +52,14 @@ public class TeacherService {
 
                     if(!CollectionUtils.isEmpty(teacherDto.getSubjects())) {
                         for (Long subject : teacherDto.getSubjects()) {
-                            TeachersSubjectsXrefDao teachersSubjectsXrefDao = new TeachersSubjectsXrefDao();
-                            teachersSubjectsXrefDao.setTeacherId(teacherDao.getId());
-                            teachersSubjectsXrefDao.setSubjectId(subject);
-                            teachersSubjectsXrefRepository.save(teachersSubjectsXrefDao);
+                            //find data already exists or not
+                            TeachersSubjectsXrefDao teachersSubjectsXrefDao = teachersSubjectsXrefRepository.findBySubjectIdAndTeacherId(subject, teacherDao.getId());
+                            if(teachersSubjectsXrefDao == null) {
+                                TeachersSubjectsXrefDao teachersSubjectsXrefDao1 = new TeachersSubjectsXrefDao();
+                                teachersSubjectsXrefDao1.setTeacherId(teacherDao.getId());
+                                teachersSubjectsXrefDao1.setSubjectId(subject);
+                                teachersSubjectsXrefRepository.save(teachersSubjectsXrefDao1);
+                            }
                         }
                     }
                 } else {
@@ -75,8 +79,8 @@ public class TeacherService {
         return convertDaoTODto(teacherDaos);
     }
 
-    public List<TeacherDto> getSubjectTeachers(Long subjectId) throws CustomException {
-        List<TeachersSubjectsXrefDao> teachersSubjectsXrefDaos = teachersSubjectsXrefRepository.findBySubjectId(subjectId);
+    public List<TeacherDto> getSubjectTeachers(Long schoolId, Long subjectId) throws CustomException {
+        List<TeachersSubjectsXrefDao> teachersSubjectsXrefDaos = teachersSubjectsXrefRepository.findSchoolTeachersBySubject(schoolId, subjectId);
         if(!CollectionUtils.isEmpty(teachersSubjectsXrefDaos)) {
             List<TeacherDao> teacherDaos = new ArrayList<>();
             for(TeachersSubjectsXrefDao teachersSubjectsXrefDao: teachersSubjectsXrefDaos) {
@@ -89,7 +93,7 @@ public class TeacherService {
             }
             return convertDaoTODto(teacherDaos);
         } else {
-            throw new CustomException(HttpStatus.BAD_REQUEST, "No Teacher Found for tis subject");
+            throw new CustomException(HttpStatus.BAD_REQUEST, "No Teacher Found for this subject");
         }
 
     }

@@ -6,10 +6,7 @@ import com.myschool.kmhss.dao.SchoolDao;
 import com.myschool.kmhss.dto.SchoolChangePwdDto;
 import com.myschool.kmhss.dto.SchoolDto;
 import com.myschool.kmhss.exception.CustomException;
-import com.myschool.kmhss.repositories.AcademicStudentsRepository;
-import com.myschool.kmhss.repositories.SchoolGradeRepository;
-import com.myschool.kmhss.repositories.SchoolRepository;
-import com.myschool.kmhss.repositories.TeacherRepository;
+import com.myschool.kmhss.repositories.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,6 +30,12 @@ public class SchoolServiceImpl implements SchoolService {
 
     @Autowired
     SchoolGradeRepository schoolGradeRepository;
+
+    @Autowired
+    ParentsRepository parentsRepository;
+
+    @Autowired
+    StudentsRepository studentsRepository;
 
     @Autowired
     AcademicStudentsRepository academicStudentsRepository;
@@ -139,9 +142,10 @@ public class SchoolServiceImpl implements SchoolService {
                     BeanUtils.copyProperties(schoolDao1, dto);
                     dto.setAcademicYearId(academicYearDao.getId());
                     dto.setAcademicYear(academicYearDao.getAcademicYear());
-                    dto.setTeachersCount(teacherRepository.findTeachersCount());
-                    dto.setGradesCount(schoolGradeRepository.findSchoolGradesCount(academicYearId));
-                    dto.setStudentsCount(schoolGradeRepository.findSchoolGradesCount(academicYearId));
+                    dto.setTeachersCount(teacherRepository.findSchoolActiveTeachersCount(dto.getId()));
+                    dto.setGradesCount(schoolGradeRepository.findSchoolGradesCount(academicYearId, dto.getId()));
+                    dto.setParentsCount(parentsRepository.findSchoolActiveParentsCount(dto.getId()));
+                    dto.setStudentsCount(studentsRepository.findSchoolActiveStudentsCount(dto.getId()));
                     return dto;
                 }
             } else {

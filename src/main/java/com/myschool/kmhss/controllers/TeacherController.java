@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.server.PathParam;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,9 +58,12 @@ public class TeacherController {
         return new ResponseEntity<String>("Teacher status changed successfully", HttpStatus.OK);
     }
 
-    @GetMapping(value = "/getSubjectTeachers/{subjectId}")
-    public ResponseEntity<List<TeacherDto>> getSubjectTeachers(@PathVariable Long subjectId) throws CustomException {
-        List<TeacherDto> teacherDtos = teacherService.getSubjectTeachers(subjectId);
+    @GetMapping(value = "/getSubjectTeachers")
+    public ResponseEntity<List<TeacherDto>> getSubjectTeachers(
+            @PathParam("school_id") Long school_id,
+            @PathParam("subject_id") Long subject_id
+    ) throws CustomException {
+        List<TeacherDto> teacherDtos = teacherService.getSubjectTeachers(school_id, subject_id);
         return new ResponseEntity<List<TeacherDto>>(teacherDtos, HttpStatus.OK);
     }
 

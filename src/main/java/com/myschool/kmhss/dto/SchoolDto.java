@@ -24,5 +24,6 @@ public class SchoolDto {
     private String academicYear;
     private Long teachersCount;
     private Long gradesCount;
+    private Long parentsCount;
     private Long studentsCount;
 }

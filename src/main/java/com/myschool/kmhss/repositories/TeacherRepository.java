@@ -14,8 +14,8 @@ public interface TeacherRepository extends JpaRepository<TeacherDao, Long> {
     public List<TeacherDao> findBySchoolId(Long schoolId);
     public TeacherDao findByMobileNoAndLoginPwd(long mobileNo, String pwd);
 
-    @Query( value = "select count(*) from teachers where status='Active'", nativeQuery = true)
-    public Long findTeachersCount();
+    @Query( value = "select count(*) from teachers where status='Active' and school_id=?1", nativeQuery = true)
+    public Long findSchoolActiveTeachersCount(Long schoolId);
 
     public TeacherDao findByMobileNo(long mobileNo);
     public TeacherDao findByEmail(String email);

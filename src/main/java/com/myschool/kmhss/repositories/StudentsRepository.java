@@ -29,4 +29,7 @@ public interface StudentsRepository extends JpaRepository<StudentsDao, Long> {
     @Query( value = "select count(*) from students where school_id=?1 ", nativeQuery = true)
     public Long findBySchoolIdCount(Long schoolId);
 
+    @Query( value = "select count(*) from students where status='Active' and school_id=?1 ", nativeQuery = true)
+    public Long findSchoolActiveStudentsCount(Long schoolId);
+
 }
