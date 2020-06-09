@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.myschool.kmhss.iml" filepath="$PROJECT_DIR$/.idea/modules/com.myschool.kmhss.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.myschool.kmhss.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.myschool.kmhss.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.myschool.kmhss.querydsl.iml" filepath="$PROJECT_DIR$/.idea/modules/com.myschool.kmhss.querydsl.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.myschool.kmhss.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.myschool.kmhss.test.iml" />
     </modules>
   </component>

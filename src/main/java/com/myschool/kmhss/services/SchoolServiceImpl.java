@@ -131,28 +131,43 @@ public class SchoolServiceImpl implements SchoolService {
     public SchoolDto schoolLogin(SchoolDao schoolDao, Long academicYearId) throws CustomException {
         Optional<SchoolDao> schoolDaoOptional = Optional.ofNullable(schoolRepository.findByLoginNameAndLoginPwd(schoolDao.getLoginName(), schoolDao.getLoginPwd()));
         if(schoolDaoOptional.isPresent()) {
-            SchoolDao schoolDao1 = schoolDaoOptional.get();
-            if(schoolDao1.getActiveStatus().equals("Active")) {
-                //get academic year info
-                AcademicYearDao academicYearDao = academicYearSrevice.getAcademicYearInfo(academicYearId);
-                if(academicYearDao == null) {
-                    throw new CustomException(HttpStatus.BAD_REQUEST, "Invalid Academic Year");
-                } else {
-                    SchoolDto dto = new SchoolDto();
-                    BeanUtils.copyProperties(schoolDao1, dto);
-                    dto.setAcademicYearId(academicYearDao.getId());
-                    dto.setAcademicYear(academicYearDao.getAcademicYear());
-                    dto.setTeachersCount(teacherRepository.findSchoolActiveTeachersCount(dto.getId()));
-                    dto.setGradesCount(schoolGradeRepository.findSchoolGradesCount(academicYearId, dto.getId()));
-                    dto.setParentsCount(parentsRepository.findSchoolActiveParentsCount(dto.getId()));
-                    dto.setStudentsCount(studentsRepository.findSchoolActiveStudentsCount(dto.getId()));
-                    return dto;
-                }
-            } else {
-                throw new CustomException(HttpStatus.BAD_REQUEST, "School is not in Active Status");
-            }
+            return getSchoolDto(schoolDaoOptional.get(), academicYearId);
         } else {
             throw new CustomException(HttpStatus.BAD_REQUEST, "Invalid Username and password");
+        }
+    }
+
+    public SchoolDto getSchoolLoginInfo(Long schoolId, Long academicYearId) throws CustomException {
+        Optional<SchoolDao> schoolDaoOptional = schoolRepository.findById(schoolId);
+        if(schoolDaoOptional.isPresent()) {
+            return getSchoolDto(schoolDaoOptional.get(), academicYearId);
+        } else {
+            throw new CustomException(HttpStatus.BAD_REQUEST, "Invalid School Id");
+        }
+    }
+
+
+
+    private SchoolDto getSchoolDto(SchoolDao schoolDao, Long academicYearId) throws CustomException {
+        //SchoolDao schoolDao1 = schoolDaoOptional.get();
+        if(schoolDao.getActiveStatus().equals("Active")) {
+            //get academic year info
+            AcademicYearDao academicYearDao = academicYearSrevice.getAcademicYearInfo(academicYearId);
+            if(academicYearDao == null) {
+                throw new CustomException(HttpStatus.BAD_REQUEST, "Invalid Academic Year");
+            } else {
+                SchoolDto dto = new SchoolDto();
+                BeanUtils.copyProperties(schoolDao, dto);
+                dto.setAcademicYearId(academicYearDao.getId());
+                dto.setAcademicYear(academicYearDao.getAcademicYear());
+                dto.setTeachersCount(teacherRepository.findSchoolActiveTeachersCount(dto.getId()));
+                dto.setGradesCount(schoolGradeRepository.findSchoolGradesCount(academicYearId, dto.getId()));
+                dto.setParentsCount(parentsRepository.findSchoolActiveParentsCount(dto.getId()));
+                dto.setStudentsCount(studentsRepository.findSchoolActiveStudentsCount(dto.getId()));
+                return dto;
+            }
+        } else {
+            throw new CustomException(HttpStatus.BAD_REQUEST, "School is not in Active Status");
         }
     }
 

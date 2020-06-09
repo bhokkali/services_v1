@@ -3,6 +3,7 @@ package com.myschool.kmhss.dao;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.web.bind.annotation.CrossOrigin;
 

@@ -61,4 +61,12 @@ public class StudentsController {
         return new ResponseEntity<List<StudentsAppDto>>(studentsAppDtos, HttpStatus.OK);
     }
 
+    @GetMapping(value = "searchStudent")
+    public ResponseEntity<StudentsPaginatedDto> searchStudent(
+            @PathParam("school_id") Long school_id,
+            @PathParam("student_name") String student_name) throws CustomException {
+        StudentsPaginatedDto studentsPaginatedDto = studentsService.searchStudents(school_id, student_name, 10, 0);
+        return new ResponseEntity<StudentsPaginatedDto>(studentsPaginatedDto, HttpStatus.OK);
+    }
+
 }

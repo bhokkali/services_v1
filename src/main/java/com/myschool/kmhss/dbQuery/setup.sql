@@ -264,3 +264,27 @@ CREATE TABLE public.school_circulars (
 	cr_date date null,
     up_date date null
 );
+
+CREATE TABLE public.grades (
+	grade_id serial8 NOT NULL,
+	grade_name varchar(50) null,
+	priority int8 null,
+	cr_date date null,
+	up_date date null
+);
+
+CREATE TABLE public.subadmins (
+	subadmin_id serial8 NOT NULL,
+	school_id int8 not null,
+	login_name varchar(50) null,
+	login_pwd varchar(30) null,
+	cr_date date null,
+	up_date date null
+);
+
+CREATE TABLE public.admin_permissions (
+	id serial8 NOT NULL,
+	subadmin_id int8 not null,
+	permission_id int8 not null
+);
+

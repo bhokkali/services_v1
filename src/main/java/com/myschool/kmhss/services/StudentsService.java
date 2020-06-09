@@ -1,5 +1,6 @@
 package com.myschool.kmhss.services;
 
+import com.fasterxml.jackson.databind.util.ArrayBuilders;
 import com.myschool.kmhss.dao.AcademicStudentsDao;
 import com.myschool.kmhss.dao.SchoolDao;
 import com.myschool.kmhss.dao.StudentsDao;
@@ -196,6 +197,24 @@ public class StudentsService {
     public Long getActiveStudentsAgainstParentId(Long parentId) throws CustomException {
         Long studentCount = studentsRepository.findActiveStudentsCountByParentId(parentId);
         return studentCount;
+    }
+
+    public StudentsPaginatedDto searchStudents(Long schoolId, String studentName, Integer perPage, Integer pageNumber) {
+
+
+        Pageable pageable = PageRequest.of(pageNumber, perPage, Sort.by(Sort.Direction.ASC, "studentName"));
+        Page<StudentsDao> studentsDaoPage = studentsPaggingRepository.searchStudents(schoolId, studentName, pageable);
+
+        List<StudentsDao> studentsDaos = new ArrayList<>();
+        if(studentsDaoPage.hasContent()) {
+            studentsDaos = studentsDaoPage.getContent();
+        }
+
+        StudentsPaginatedDto studentsPaginatedDto = new StudentsPaginatedDto();
+        Long studentsCount = studentsRepository.findBySchoolIdCount(schoolId);
+        studentsPaginatedDto.setCount(studentsCount);
+        studentsPaginatedDto.setStudentsList(convertDaoTODto(studentsDaos));
+        return studentsPaginatedDto;
     }
 
 }

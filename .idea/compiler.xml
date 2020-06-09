@@ -6,6 +6,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com.myschool.kmhss.main" target="1.8" />
+      <module name="com.myschool.kmhss.querydsl" target="1.8" />
       <module name="com.myschool.kmhss.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
