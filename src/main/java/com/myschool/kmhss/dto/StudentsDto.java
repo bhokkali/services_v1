@@ -42,5 +42,6 @@ public class StudentsDto {
     //private ParentsDao parentsDao;
     private String parentName;
     private Long schoolGradeId;
+    private String gradeName;
 
 }

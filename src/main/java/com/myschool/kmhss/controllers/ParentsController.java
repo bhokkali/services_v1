@@ -69,4 +69,16 @@ public class ParentsController {
         parentsService.parentChangePassword(parentsDao);
         return new ResponseEntity<String>("Password changed successfully", HttpStatus.OK);
     }
+
+    @GetMapping(value = "/searchParents")
+    public ResponseEntity<ParentsPaginatedDto> searchParents(
+            @PathParam("school_id") Long school_id,
+            @PathParam("parent_name") String parent_name,
+            @PathParam("status") String status,
+            @RequestParam(required = false, value = "per_page", defaultValue = GlobalConstants.DEFAULT_PER_PAGE_SIZE_VALUE) int perPage,
+            @RequestParam(required = false, value = "page", defaultValue = GlobalConstants.DEFAULT_PAGE_NUMBER_VALUE) int pageNumber
+    ) throws CustomException {
+        ParentsPaginatedDto parentsPaginatedDto = parentsService.searchParents(school_id, parent_name, status, perPage, pageNumber);
+        return new ResponseEntity<ParentsPaginatedDto>(parentsPaginatedDto, HttpStatus.OK);
+    }
 }

@@ -25,4 +25,10 @@ public interface ParentsRepository extends PagingAndSortingRepository<ParentsDao
     @Query( value = "select count(*) from parents where status='Active' and school_id=?1", nativeQuery = true)
     public Long findSchoolActiveParentsCount(Long schoolId);
 
+    @Query( value = "select * from parents t1 where t1.school_id=?1 and t1.status=?2 and LOWER(t1.parent_name) like ?3%", nativeQuery = true)
+    public Page<ParentsDao> searchParents(Long schoolId, String status, String parentName, Pageable pageable);
+
+    @Query( value = "select count(*) from parents t1 where t1.school_id=?1 and status=?2 and LOWER(t1.parent_name) like ?3%", nativeQuery = true)
+    public Long searchParentsCount(Long schoolId, String status, String parentName);
+
 }

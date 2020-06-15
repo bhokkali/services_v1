@@ -163,4 +163,22 @@ public class ParentsService {
             throw new CustomException(HttpStatus.BAD_REQUEST, "Invalid Parent Id");
         }
     }
+
+    public ParentsPaginatedDto searchParents(Long schoolId, String parentName, String status, Integer perPage, Integer pageNumber) {
+
+        Pageable pageable = PageRequest.of(pageNumber, perPage, Sort.by(Sort.Direction.ASC, "parent_name"));
+        Page<ParentsDao> parentsDaoPage = parentsRepository.searchParents(schoolId, status, parentName.toLowerCase(), pageable);
+
+        List<ParentsDao> parentsDaos = new ArrayList<>();
+        if(parentsDaoPage.hasContent()) {
+            parentsDaos = parentsDaoPage.getContent();
+        }
+
+        ParentsPaginatedDto parentsPaginatedDto = new ParentsPaginatedDto();
+        Long studentsCount = parentsRepository.searchParentsCount(schoolId, status, parentName.toLowerCase());
+        parentsPaginatedDto.setCount(studentsCount);
+        parentsPaginatedDto.setParentsList(convertDaoTODto(parentsDaos));
+        return parentsPaginatedDto;
+
+    }
 }

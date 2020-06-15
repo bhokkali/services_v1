@@ -12,6 +12,6 @@ public interface StudentsPaggingRepository extends PagingAndSortingRepository<St
 
     public Page<StudentsDao> findBySchoolId(Long schoolId, Pageable pageable);
 
-    @Query( value = "select * from students as t1 where t1.school_id=?1 and t1.student_name like %?2%", nativeQuery = true)
-    public Page<StudentsDao> searchStudents(Long schoolId, String schoolName, Pageable pageable);
+    @Query( value = "select * from students t1 where t1.school_id=?1 and t1.status=?2 and LOWER(t1.student_name) like ?3%", nativeQuery = true)
+    public Page<StudentsDao> searchStudents(Long schoolId, String status, String studentName, Pageable pageable);
 }

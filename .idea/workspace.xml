@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46433711-9ba8-4562-8c77-a132559c48dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/ParentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/ParentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/StudentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dbQuery/setup.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dbQuery/setup.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/ParentsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/ParentsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsPaggingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsPaggingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/ParentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/ParentsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/StudentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/StudentsService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -21,52 +29,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/SchoolServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/StudentsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="139" column="100" lean-forward="true" selection-start-line="139" selection-start-column="100" selection-end-line="139" selection-end-column="100" />
+            <state relative-caret-position="207">
+              <caret line="64" column="7" lean-forward="true" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/SubadminsService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/ParentsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/SubadminsDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/ParentsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="259">
+              <caret line="177" column="108" selection-start-line="177" selection-start-column="108" selection-end-line="177" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/ParentsRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="30" column="114" selection-start-line="30" selection-start-column="114" selection-end-line="30" selection-end-column="114" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/StudentsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/SubadminsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="37" column="59" lean-forward="true" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+            <state relative-caret-position="233">
+              <caret line="215" column="111" selection-start-line="215" selection-start-column="111" selection-end-line="215" selection-end-column="111" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,25 +77,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/SubadminsDto.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="34" column="116" selection-start-line="34" selection-start-column="116" selection-end-line="34" selection-end-column="116" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/SubadminsLoginDto.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/AcademicStudentsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-192">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentsDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/GradeDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsPaggingRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="14" column="112" selection-start-line="14" selection-start-column="112" selection-end-line="14" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -114,9 +137,11 @@
       <find>Date</find>
       <find>SimpleDateFormat</find>
       <find>getSchoolInfo</find>
+      <find>studentname</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/src/main/java/com/myschool/kmhss</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -125,8 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/ExamGradesDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/ExamGradesDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/ExamsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/ExamsDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/CalendarDao.java" />
@@ -135,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/SchoolDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/StudentAttendanceDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentAttendanceDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentsDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/TeacherAttendanceDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/TeacherAttendanceDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/TeacherDto.java" />
@@ -150,13 +172,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/SchoolDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/TeacherRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/SchoolGradeRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/ParentsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/CalendarRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/CalendarService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/StudentsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsPaggingRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/StudentsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/StudentsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/ParentsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/Permissions.java" />
@@ -164,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/PermissonsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/PermissionsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/PermissionsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dbQuery/setup.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/AdminPermissionsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/AdminPermissionDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/AdminPermissionsRepository.java" />
@@ -176,6 +192,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/SubadminsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/SubadminsDto.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dbQuery/setup.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentsDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/StudentsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/ParentsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/ParentsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsPaggingRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/ParentsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/StudentsService.java" />
       </list>
     </option>
   </component>
@@ -229,13 +254,27 @@
               <item name="services_v1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kmhss" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kmhss" type="b2602c69:ProjectViewProjectNode" />
               <item name="services_v1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="querydsl" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kmhss" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kmhss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services_v1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kmhss" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,7 +285,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591684108351" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592223779791" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -320,13 +359,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.32753623" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.32753623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991204" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32608697" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32608697" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.32947975" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3289855" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3289855" />
@@ -390,95 +429,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsPaggingRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="123" selection-start-line="14" selection-start-column="123" selection-end-line="14" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/StudentsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="216" column="36" lean-forward="true" selection-start-line="216" selection-start-column="36" selection-end-line="216" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/PeriodsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="49" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/PermissionsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/PeriodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/PeriodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/PermissionsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/PermissionsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dbQuery/setup.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="284" column="39" lean-forward="true" selection-start-line="284" selection-start-column="39" selection-end-line="284" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/TeachersSubjectsXrefDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="35" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/AdminPermissionsDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -524,20 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentsPaginatedDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentsDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -659,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/StudentsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/SchoolDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -711,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/StudentsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="58" column="76" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/SchoolController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -728,17 +650,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/SubadminsLoginDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/SubadminsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="37" column="59" lean-forward="true" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -748,14 +660,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/SchoolServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
-          <caret line="139" column="100" lean-forward="true" selection-start-line="139" selection-start-column="100" selection-end-line="139" selection-end-column="100" />
+          <caret line="139" column="100" selection-start-line="139" selection-start-column="100" selection-end-line="139" selection-end-column="100" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/SubadminsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+          <caret line="107" column="31" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -765,7 +677,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/SubadminsDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -782,10 +694,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dbQuery/setup.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="284" column="28" lean-forward="true" selection-start-line="284" selection-start-column="28" selection-end-line="284" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/SubadminsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentsPaginatedDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/StudentsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/AcademicStudentsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/SchoolGradeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dao/GradeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/dto/StudentsDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/StudentsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="64" column="7" lean-forward="true" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/controllers/ParentsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/ParentsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="30" column="114" selection-start-line="30" selection-start-column="114" selection-end-line="30" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsPaggingRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="112" selection-start-line="14" selection-start-column="112" selection-end-line="14" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/repositories/StudentsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="34" column="116" selection-start-line="34" selection-start-column="116" selection-end-line="34" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/ParentsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="177" column="108" selection-start-line="177" selection-start-column="108" selection-end-line="177" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myschool/kmhss/services/StudentsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="215" column="111" selection-start-line="215" selection-start-column="111" selection-end-line="215" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

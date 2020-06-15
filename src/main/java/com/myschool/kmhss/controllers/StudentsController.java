@@ -64,8 +64,12 @@ public class StudentsController {
     @GetMapping(value = "searchStudent")
     public ResponseEntity<StudentsPaginatedDto> searchStudent(
             @PathParam("school_id") Long school_id,
-            @PathParam("student_name") String student_name) throws CustomException {
-        StudentsPaginatedDto studentsPaginatedDto = studentsService.searchStudents(school_id, student_name, 10, 0);
+            @PathParam("student_name") String student_name,
+            @PathParam("status") String status,
+            @RequestParam(required = false, value = "per_page", defaultValue = GlobalConstants.DEFAULT_PER_PAGE_SIZE_VALUE) int perPage,
+            @RequestParam(required = false, value = "page", defaultValue = GlobalConstants.DEFAULT_PAGE_NUMBER_VALUE) int pageNumber
+    ) throws CustomException {
+        StudentsPaginatedDto studentsPaginatedDto = studentsService.searchStudents(school_id, student_name, status, perPage, pageNumber);
         return new ResponseEntity<StudentsPaginatedDto>(studentsPaginatedDto, HttpStatus.OK);
     }
 

@@ -273,6 +273,13 @@ CREATE TABLE public.grades (
 	up_date date null
 );
 
+CREATE TABLE public.permissions (
+	permission_id serial8 NOT NULL,
+	permission_name varchar(50) null,
+	cr_date date null,
+	up_date date null
+);
+
 CREATE TABLE public.subadmins (
 	subadmin_id serial8 NOT NULL,
 	school_id int8 not null,

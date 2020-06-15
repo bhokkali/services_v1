@@ -76,6 +76,8 @@ public class StudentsService {
             AcademicStudentsDao academicStudentsDao = academicStudentsService.getStudentCurrentGrade(studentsDao.getSchoolId(), studentsDao.getId());
             if(academicStudentsDao != null) {
                 dto.setSchoolGradeId(academicStudentsDao.getSchoolGradeId());
+                String gradeName = academicStudentsDao.getSchoolGradeDao().getGradeDao().getGrade_name() +" "+academicStudentsDao.getSchoolGradeDao().getSectionName();
+                dto.setGradeName(gradeName);
             }
             studentsDtos.add(dto);
         }
@@ -199,11 +201,11 @@ public class StudentsService {
         return studentCount;
     }
 
-    public StudentsPaginatedDto searchStudents(Long schoolId, String studentName, Integer perPage, Integer pageNumber) {
+    public StudentsPaginatedDto searchStudents(Long schoolId, String studentName, String status, Integer perPage, Integer pageNumber) {
 
 
-        Pageable pageable = PageRequest.of(pageNumber, perPage, Sort.by(Sort.Direction.ASC, "studentName"));
-        Page<StudentsDao> studentsDaoPage = studentsPaggingRepository.searchStudents(schoolId, studentName, pageable);
+        Pageable pageable = PageRequest.of(pageNumber, perPage, Sort.by(Sort.Direction.ASC, "student_name"));
+        Page<StudentsDao> studentsDaoPage = studentsPaggingRepository.searchStudents(schoolId, status, studentName.toLowerCase(), pageable);
 
         List<StudentsDao> studentsDaos = new ArrayList<>();
         if(studentsDaoPage.hasContent()) {
@@ -211,7 +213,7 @@ public class StudentsService {
         }
 
         StudentsPaginatedDto studentsPaginatedDto = new StudentsPaginatedDto();
-        Long studentsCount = studentsRepository.findBySchoolIdCount(schoolId);
+        Long studentsCount = studentsRepository.searchStudentsCount(schoolId, status, studentName.toLowerCase());
         studentsPaginatedDto.setCount(studentsCount);
         studentsPaginatedDto.setStudentsList(convertDaoTODto(studentsDaos));
         return studentsPaginatedDto;
